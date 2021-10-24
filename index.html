@@ -5,66 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <title>QuizApp</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">MRK</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#skills" class="nav-link">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#project" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                </ul>
 
-            </div>
+    <div id="quw" class="d-flex flex-column border-5 bg-info">
+        <div>
+            <p class="display-6 fw-bold text-center text-light">Quiz</p>
         </div>
-    </nav>
-    <!-- Showcase -->
-    <section class="bg-dark text-center text-light p-5 text-sm-start">
-        <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h1><span class="text-warning">
-                            Rizwan
-                        </span> Here!</h1>
-                    <p class="my-4 lead">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni obcaecati quasi assumenda illum
-                        deserunt repellat eum hic voluptas aspernatur esse dignissimos veritatis facere nostrum nihil,
-                        neque dicta, ullam quaerat nemo!
-                    </p>
-                </div>
-                <img class="img-fluid w-50 d-none d-sm-block" src="https://source.unsplash.com/1600x900/?robot" alt="">
-            </div>
+        <div>
+            <span id="nbr" class="fw-bold h4"></span>
+            <p class="h4 d-inline" id="quest"></p>
         </div>
-    </section>
-    <!-- Newsletter -->
-    <section class="bg-primary text-light p-5">
-        <div class="container">
-            <div class="d-md-flex justify-content-between allign-items-center">
-                <h5 class="mb-3 mb-md-0">Go to my Github profile?</h5>
-            </div>
-        </div>
+        <div id="options" class="text-black-50">
 
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        </div>
+        <div class="container-fluid justify-content-between">
+            <button type="button" id="perv" class="btn btn-primary">Previous</button>
+            <button type="button" id="nxt" class="btn btn-primary ms-4">Next</button>
+        </div>
+    </div>
+    <div id="res" class="d-flex flex-column border-5 bg-info">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="module" src="./questions.js"></script>
+    <script type="module" src="./serv.js">
+    </script>
 </body>
 
 </html>
